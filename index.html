@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link href="iconstar.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <div class="formula">  
+    <form method="POST" action="formulario.php">
+        <fieldset>
+        <h2>Formulario de um(a) <span style="color: red;">Starr</span></h2>
+    <label for="nome" class="labelInput">Nome de Estrela:</label> <br> <br>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome de usuario" size="18" required>
+    <br> <br>
+    <label for="senha" class="labelInput">Senha:</label> <br> <br>
+    <input type="password" name="senha" placeholder="Sua Senha" size="18" required>
+    <br> <br>
+    <label for="telefone" class="labelInput">Telefone:</label> <br> <br>
+    <input type="tel" name="telefone" id="telefone" size="17" placeholder="Seu número" required>
+    <br> <br>
+    <label for="favbrawler" class="labelInput">Brawler Favorito:</label> <br> <br>
+    <input type="text" name="favbrawler" placeholder="Nome do seu Brawler favorito" size="18" required>
+    <br> <br>
+    <label for="data_nascimento" class="labelInput">Data de Nascimento:</label> <br> <br>
+    <input type="date" name="data_nascimento" size="18" required>
+    <br> <br>
+    <div class="labelInput">Genero:
+    <br>
+    <input type="radio" id="feminino" name="genero" value="feminino" required>
+    <label for="feminino">Feminino</label>
+    <input type="radio" id="masculino" name="genero" value="masculino" required>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="outro" name="genero" value="outro" required>
+    <label for="outro">Outro</label></h1>
+    </div>
+    <br>
+    <div class="labelInput">Você está pronto(a) para virar um(a) <span style="color: red">Starr?</span></div>
+        
+        
+        <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+<style>
+BODY {
+    margin: 5px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://pbs.twimg.com/media/FUtkYafX0AEMygu.jpg:large');
+    background-size: cover;
+}
+
+fieldset {
+    border: 0px;
+}
+
+#submit {
+    background: linear-gradient(to right, rgb(1, 1, 170), rgb(59, 100, 255), rgb(59, 100, 255), rgb(1, 1, 170));
+    width: 24%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: 2px 1px black;
+    font-family: 'brawlfont';
+    border-radius: 10px;
+}
+
+            #submit:hover{
+                background: linear-gradient(to right, rgb(1, 1, 255), rgb(100, 100, 255), rgb(100, 100, 255), rgb(1, 1, 255));
+                color: yellow;
+                text-shadow: 4px 3px black;
+            }  
+
+            .labelInput {
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                font-family: 'brawlfont';
+                text-shadow: 2px 1px black;
+            }
+
+            h2 {
+                color: white; 
+                font-size: 35px;
+                font-family: 'brawlfont';
+                text-shadow: 2px 1px black;
+            }
+
+            h4 {
+                text-decoration-color: yellow;
+                color: yellow;
+                font-size: 18px;
+                font-family: 'brawlfont';
+            }
+
+            a:link {
+                text-decoration: none;
+                color: yellow;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: yellow;
+            }
+
+            .formula {
+                width: 600px;
+                height: 660px;
+                border: 4px double rgb(0, 0, 0);
+                box-sizing: border-box;
+                border-radius: 20px;
+                background: linear-gradient(rgb(1, 1, 170), rgb(59, 134, 255));
+                box-shadow: 7px 7px 5px rgb(0, 0, 0);
+                text-align: center;
+            }
+
+            @font-face {
+                font-family: 'brawlfont';
+                src: url(Nougat-ExtraBlack.ttf);
+            }
+
+            </style>
+
+</body>
+</html>
